@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Texas Hold’em Game</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="table">
@@ -19,16 +19,17 @@
 
     <div class="controls">
       <button id="dealButton">Start New Hand</button>
-      <button id="betButton" disabled>Bet / Next Round</button>
+      <button id="actionButton" disabled>Action</button>
       <button id="foldButton" disabled>Fold</button>
+      <button id="raiseButton" disabled>Raise</button>
       <div id="potDisplay">Pot: $0</div>
     </div>
 
     <div id="log" class="log"></div>
   </div>
 
-  <!-- Include the hand-evaluation library script (you can download and host locally) -->
-  <script src="https://unpkg.com/pokersolver/dist/pokersolver.umd.js"></script>
+  <!-- Include pokersolver -->
+  <script src="https://cdn.jsdelivr.net/npm/pokersolver/dist/pokersolver.umd.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
